@@ -2,7 +2,7 @@ const { test, expect } = require('@playwright/test');
 import { tassPhotoLoginPage } from '../pages/tassPhotoLogin.page.js';
 
 // Название фотохостинга, на котором осуществляется проверка
-const siteName = "Тест 290822";
+const siteName = "Тест 280722";
 
 test('search by id', async ({ page, context }) => {
     // Авторизация 
@@ -12,8 +12,8 @@ test('search by id', async ({ page, context }) => {
 
     // Выбор фотохостинга
 
-    // Выбор третьего в списке фотохостинга
-    await page.locator('tr:nth-child(4) td:nth-child(4) a').click();
+    // Выбор четвёртого в списке фотохостинга
+    await page.locator('tr:nth-child(5) td:nth-child(4) a').click();
 
     // // Фильтр по названию, ID
     // await page.locator('tr:nth-child(1) th:nth-child(4) div.list-white__cell-wrapper a:nth-child(1) span').click();

@@ -2,7 +2,7 @@ const { test, expect } = require('@playwright/test');
 import { tassPhotoLoginPage } from '../pages/tassPhotoLogin.page.js';
 
 // Название фотохостинга, на котором осуществляется проверка
-const siteName = "Тест 290822";
+const siteName = "Тест 280722";
 
 test('downloading of partially disabled authorization access images', async ({ page, context }) => {
   test.setTimeout(150000);

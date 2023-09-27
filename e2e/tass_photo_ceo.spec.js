@@ -23,7 +23,7 @@ console.log(email);
 const userName = faker.internet.userName();
 console.log(userName);
 
-const siteAccess = 'Тест 290822';
+//const siteAccess = 'Тест 280722';
 
 test('ceo editor - sign-up and sign-in', async ({ page, context }) => {
     test.setTimeout(80000);
@@ -63,8 +63,6 @@ test('ceo editor - sign-up and sign-in', async ({ page, context }) => {
 
     // Пароль 
     await page.locator('div.modal_active input#password_').type(idealPassword, {delay: 100});
-
-    //await page.pause();
 
     await page.locator('a.modal__header-action').click();
 

@@ -2,7 +2,7 @@ const { test, expect } = require('@playwright/test');
 import { tassPhotoLoginPage } from '../pages/tassPhotoLogin.page.js';
 
 // Название фотохостинга, на котором осуществляется проверка
-const siteName = "Фотохостинг тестовый";
+const siteName = "Тест 080223";
 
 test('downloading of archive image hosting files', async ({ page, context }) => {
     test.setTimeout(80000);

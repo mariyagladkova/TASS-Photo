@@ -2,7 +2,7 @@ const { test, expect } = require('@playwright/test');
 import { tassPhotoLoginPage } from '../pages/tassPhotoLogin.page.js';
 
 // Название фотохостинга, на котором осуществляется проверка
-const siteName = "211222";
+const siteName = "280722";
 
 let i = 0;
 

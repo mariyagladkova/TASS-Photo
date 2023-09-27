@@ -1,7 +1,6 @@
 const { test, expect } = require('@playwright/test');
 import { tassPhotoLoginPage } from '../pages/tassPhotoLogin.page.js';
 const Fakerator = require("fakerator");
-import { faker } from '@faker-js/faker/locale/ru';
 import generatePassword from "omgopass";
 
 const fakerator = Fakerator("ru-RU");
@@ -23,7 +22,7 @@ const idealPassword = generatePassword({
 });
 console.log(idealPassword);
 
-const siteAccess = 'Тест 290822';
+//const siteAccess = 'Тест 280722';
 
 test('profile edit and sign-in', async ({ page, context }) => {
     test.setTimeout(100000);

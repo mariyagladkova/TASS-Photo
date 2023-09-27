@@ -1,5 +1,8 @@
 const { expect } = require('@playwright/test');
 
+const username = 'support@nutnet.ru';
+const password = 'tassphoto_admin';
+
 exports.tassPhotoLoginPage = class tassPhotoLoginPage {
 
   /**
@@ -17,8 +20,9 @@ exports.tassPhotoLoginPage = class tassPhotoLoginPage {
   }
 
   async login() {
-    await this.loginField.type("mariya_g");
-    await this.passwordField.type("123Koo456!");
+    await this.loginField.type(username);
+    await this.page.pause();
+    await this.passwordField.type(password);
     await this.submitButton.click();
   }
 }

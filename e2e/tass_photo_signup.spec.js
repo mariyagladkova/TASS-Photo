@@ -33,7 +33,7 @@ console.log(email);
 const userName = faker.internet.userName();
 console.log(userName);
 
-const siteAccess = 'Тест 290822';
+const siteAccess = 'Тест 280722';
 
 test('sign-up and sign-in', async ({ page, context }) => {
   test.setTimeout(100000);
